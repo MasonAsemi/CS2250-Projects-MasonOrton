@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <form action="" method="POST">
+            <label for="name">Your name:</label><br>
+            <input type="text" id="name" name="name" placeholder="last name, first name"><br>
+
+            <label for="username">Username <span style="color: red">*</span>:</label><br>
+            <input type="text" name="username" id="username" required><br>
+
+            <label for="password">Password*:</label><br>
+            <input type="password" name="password" id="password" required pattern=".{8,}"><br>
+            <!--The pattern requirement is simply 8 characters-->
+            <p>* field is required</p>
+            <br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
