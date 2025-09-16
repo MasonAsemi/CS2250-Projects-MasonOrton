@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+
+    <fieldset>
+        <legend>Student Info</legend>
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="broncoID" placeholder="first name last name" required><br>  
+
+        <label for="broncoID">Bronco ID:</label><br>
+        <input type="number" name="broncoID" id="broncoID" placeholder="Enter numbers only" pattern=".{9,}" min="0"><br>
+    </fieldset>
+
+    <label for="course">Which course are you taking this semester?</label><br>
+    <select name="course" id="course">
+        <option value="" selected disabled>CPP CS course only</option>
+        <option value="1300">CS1300</option>
+        <option value="1400">CS1400</option>
+        <option value="1600">CS1600</option>
+        <option value="0">None of the above</option>
+    </select><br>
+
+    <!-- <label for="courses">Which course are you taking this semester?</label>
+    <select name="courses" id="courses" multiple>
+        <option value="" selected disabled>CPP CS course only</option>
+        <option value="1300">CS1300</option>
+        <option value="1400">CS1400</option>
+        <option value="1600">CS1600</option>
+        <option value="0">None of the above</option>
+    </select>  -->
+
+    <!-- <label for="class">Choose a course:</label><br>
+    <input list="class" name="class" id="class" value="CS 2250">
+    <datalist>
+        <option value="CS 1300">
+        <option value="CS 1400">
+        <option value="CS 2250">
+        <option value="CS 3310">
+    </datalist><br> -->
+
+    <!-- radio button -->
+     <div>
+        Are you a freshman? <br>
+        <input type="radio" name="freshman" id="freshman-yes" value="yes"><label for="freshman-yes">Yes</label>
+        <input type="radio" name="freshman" id="freshman-no" value="no"><label for="freshman-no">No</label>
+     </div>
+
+     <div>
+        <label for="comments">Other comments (optional):</label><br>
+        <textarea name="comments" id="comments" cols="100" rows="10"></textarea>
+     </div>
+
+     <button type="submit" class="favorite style">Submit</button>
+     <!-- the "favorite style" is a class type that changes the button type. It was used to demonstrate how to change its look. Use whatever label you have for a different submit button. -->
+
+     <input type="button" class="styled" value="Click me">
+
+
+
+     <button class="btn">
+        <!-- This is a custom button, it is janky because the photo is not intended to be used as a button. You would uplaod the button design in order to do so. -->
+        <span class="btn-icon">
+            <img src="dog.jpg" alt="dog">
+        </span>
+
+        <span class="btn-text">My Awesome Button</span>
+     </button>
+
+</body>
+</html>
